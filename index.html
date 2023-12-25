@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Header Editor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <div class="column" data-type="html" draggable="true"></div>
+      <div class="column" data-type="image" draggable="true"></div>
+    </div>
+    <div class="editor">
+      <button id="add-column-button">Add Column</button>
+      <div class="column-type">
+        <label>Select Type:</label>
+        <select id="column-type-select">
+          <option value="html">HTML</option>
+          <option value="image">Image</option>
+          <option value="clock">Clock</option>
+        </select>
+      </div>
+      <div class="column-editor" id="column-editor"></div>
+      <button onclick="saveChanges()">Save Changes</button>
+      <button id="remove-column-button">Remove Column</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
